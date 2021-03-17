@@ -1,9 +1,9 @@
 document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
-  const choice = document.querySelector('input').value
+  const choice = document.querySelector('input').value.toLowerCase()
   console.log(choice)
-  const url = `https://openlibrary.org/isbn/${choice}.json`
+  const url = `https://rickandmortyapi.com/api/character/?name=${choice}`
 
   fetch(url)
 

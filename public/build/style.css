@@ -6,6 +6,15 @@
 Document
 ========
 */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .text-gradient{
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
 
 /**
 Use a better box model (opinionated).
@@ -53,7 +62,6 @@ body {
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
-
 body {
   font-family:
 		system-ui,

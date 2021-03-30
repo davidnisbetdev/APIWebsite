@@ -2,7 +2,7 @@ document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
   const choice = document.querySelector('input').value.toLowerCase()
-  console.log(choice)
+  // console.log(choice)
   const url = `https://rickandmortyapi.com/api/character/?name=${choice}`
 
   fetch(url)
